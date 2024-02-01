@@ -17,11 +17,12 @@ body {
 #card, #card-front, #card-inside {
   height: 600px;
 }
-
+.no-wrap,
 .wrap {
     padding: 1.5em 2.5em;
     height: 100%;
 }
+
 #card-front, #card-inside {
   width: 50%;
   -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
@@ -76,6 +77,13 @@ p {
 
 p:first-child {
     margin-top: 0;
+}
+
+p.signed-no-center {
+    margin-top: 1.5em;
+    text-align: left;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.5em;
 }
 
 p.signed {
@@ -197,3 +205,63 @@ footer {
   color: #888;
   text-align: center;
 }
+
+.cake {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+  }
+  .top-layer,
+  .middle-layer,
+  .bottom-layer {
+    height: 80px;
+    width: 240px;
+    background-repeat: repeat;
+    background-size: 60px 100px;
+    background-position: 28px 0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #fedbab 50px,
+        #fedbab 60px,
+        transparent 60px
+      ),
+      radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: auto;
+  }
+  .middle-layer {
+    transform: scale(0.85);
+    top: 6px;
+  }
+  .top-layer {
+    transform: scale(0.7);
+    top: 26px;
+  }
+  .candle {
+    height: 45px;
+    width: 15px;
+    background: repeating-linear-gradient(
+      45deg,
+      #fd3018 0,
+      #fd3018 5px,
+      #ffa89e 5px,
+      #ffa89e 10px
+    );
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 202px;
+  }
+  .candle:before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 48px;
+    transform: rotate(45deg);
+    left: -1px;
+  }

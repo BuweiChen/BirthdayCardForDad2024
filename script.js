@@ -40,7 +40,7 @@
         text.innerHTML = "<p>One thing that I’ve never appreciated before quite as much as I do now, is the strong logical reasoning skills you have. It is because of this, we can always have a productive conversation that allows me to learn your insights despite us starting with differing opinions sometimes. One of my favorite things about our relationship is the intellectual discussions we have, whether about current events, analysis of everyday situations, philosophy, or practical advices. I often come out of these conversations with ideas that I can immediately act on, and always having gained some sort of insight adjacent to our topic of discussion. This goes to show that I have much to learn from you, and much to gain from continuing (and continually optimizing) these discussions.</p>";
         text.setAttribute("data-page", 3);
       } else if (text.getAttribute("data-page") == 3) {
-        text.innerHTML = "<p>And this is another reason for why I’m grateful of you being so willing to share your knowledge without reservations. So this year, I thank you for being a great teacher (perhaps \“coach\” is better suited), and for being a great dad. Have a fabulous birthday!</p><p class=\"signed\">Buwei</p>";
+        text.innerHTML = "<p>And this is another reason for why I’m grateful of you being so willing to share your knowledge without reservations. So this year, I thank you for being a great teacher (perhaps \“coach\” is better suited), and for being a great dad. Have a fabulous birthday!</p><p class=\"signed-no-center\">Love,</p><p class=\"signed-no-center\">Buwei</p>";
         next.textContent = "return to page 1"
         text.setAttribute("data-page", 0);
       }
